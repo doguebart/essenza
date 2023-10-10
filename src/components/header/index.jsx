@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/Fi";
+import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,10 +10,18 @@ const Menu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="w-full p-5 bg-black md:flex md:justify-around md:items-center fixed top-0 z-10">
       <div className="flex justify-between items-center max-w-full">
-        <Link to="/">
+        <Link to="/" onClick={scrollToTop} className="cursor-pointer">
           <img src="/ESSENZA.svg" alt="logo" />
         </Link>
 
@@ -27,38 +36,54 @@ const Menu = () => {
       <ul
         className={`${
           menuOpen ? "block" : "hidden"
-        } md:flex space-y-6 md:space-y-0 md:space-x-10 md:items-center md:bg-transparent md:p-0 py-4 md:w-auto md:opacity-100 transition-all ease-in duration-500`}
+        } md:flex space-y-8 md:space-y-0 md:space-x-10 md:items-center md:bg-transparent md:p-0 py-10 md:w-auto md:opacity-100 transition-all ease-in duration-500`}
       >
         <li>
           <Link
-            to="/"
-            className="text-white text-md md:border-0 md:p-0 border p-2 hover:opacity-90 duration-200 whitespace-nowrap"
+            to="inicio"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="text-white text-md md:border-0 md:p-0 border p-2 hover:opacity-90 duration-200 whitespace-nowrap cursor-pointer"
           >
             Início
           </Link>
         </li>
         <li>
           <Link
-            to="#"
-            className="text-white text-md border p-2 md:border-0 md:p-0 hover:opacity-90 duration-200 whitespace-nowrap"
+            to="produtos"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="text-white text-md border p-2 md:border-0 md:p-0 hover:opacity-90 duration-200 whitespace-nowrap cursor-pointer"
           >
-            Essenza for you
+            Produtos
           </Link>
         </li>
         <li>
           <Link
-            to="#"
-            className="text-white border p-2 md:border-0 md:p-0 text-md hover:opacity-90 duration-200 whitespace-nowrap"
+            to="sobre"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="text-white text-md border p-2 md:border-0 md:p-0 hover:opacity-90 duration-200 whitespace-nowrap cursor-pointer"
           >
-            Essenza for all
+            Sobre a Essenza
           </Link>
         </li>
         <li>
           <Link
-            to="#"
-            className="text-white border p-2 md:border-0 md:p-0 text-md hover:opacity-90 duration-200 whitespace-nowrap"
+            to="missao"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="text-white text-md border p-2 md:border-0 md:p-0 hover:opacity-90 duration-200 whitespace-nowrap cursor-pointer"
           >
-            Essenza for nutri
+            Nossa missão
           </Link>
         </li>
       </ul>
