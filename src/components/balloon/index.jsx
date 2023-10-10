@@ -1,5 +1,5 @@
 import React from "react";
-import { PiWhatsappLogo } from "react-icons/Pi";
+import { PiWhatsappLogo } from "react-icons/pi";
 
 const Balloon = () => {
   return (
