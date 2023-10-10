@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiMenu } from "react-icons/Fi";
+import { FiMenu } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 

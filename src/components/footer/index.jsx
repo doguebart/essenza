@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiInstagram, FiLinkedin, FiYoutube } from "react-icons/Fi";
+import { FiInstagram, FiLinkedin, FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
