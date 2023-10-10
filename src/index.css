@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #A87B22
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
