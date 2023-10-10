@@ -36,7 +36,7 @@ const Routine = () => {
       ) : (
         <div className="w-full h-full flex flex-col">
           <div className="w-full h-full flex flex-col justify-center lg:px-0 bg-white">
-            <div className="w-full max-h-full lg:w-2/3 self-center py-28 px-4">
+            <div className="w-full max-h-full lg:w-2/3 self-center py-10 lg:py-28 px-4">
               <Link
                 to="/"
                 className="lg:w-1/6 mb-10 lg:mb-20 text-lg flex items-center space-x-2 hover:opacity-90 duration-200"
