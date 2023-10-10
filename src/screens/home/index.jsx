@@ -73,7 +73,7 @@ const Home = () => {
                   com confiança, escolhendo a Essenza.
                 </p>
                 <div className="w-full max-h-full grid grid-cols-1 lg:grid-cols-2 gap-2">
-                  <div className="w-full max-h-80 mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
+                  <div className="w-full max-h-full mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
                     <span className="text-md text-black font-bold">
                       SÉRUM SPEACIAL FOR YOU
                     </span>
@@ -88,7 +88,7 @@ const Home = () => {
                       Confira
                     </button>
                   </div>
-                  <div className="w-full max-h-80 mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
+                  <div className="w-full max-h-full mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
                     <span className="text-md text-black font-bold">
                       ESSENZA SUN FPS 60
                     </span>
