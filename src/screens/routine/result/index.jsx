@@ -50,11 +50,11 @@ const Result = () => {
                       auxiliar na proteção contra os raios UVA/UVB com o seu FPS
                       60 e seu PPD 25.
                     </p>
-                    <div className="w-full max-h-full flex items-center justify-between mt-4">
+                    <div className="w-full max-h-full flex items-center justify-between mt-4 lg:mt-auto">
                       <button className="bg-gold text-sm text-white w-1/3 p-2 rounded-sm hover:opacity-90 duration-200">
                         Confira
                       </button>
-                      <span className="text-md">R$ 89,90</span>
+                      <span className="text-md">R$229,99</span>
                     </div>
                   </div>
                   <div className="w-full max-h-full mt-10 flex flex-col">
@@ -77,12 +77,12 @@ const Result = () => {
                     <div className="flex flex-col w-full max-h-full">
                       <div className="mt-4 w-full max-h-full flex items-center space-x-2">
                         <span className="text-sm font-bold text-gray-500/30 line-through">
-                          R$119,90
+                          R$234,99
                         </span>
-                        <span className="text-lg font-bold">R$89,90</span>
+                        <span className="text-lg font-bold">R$229,99</span>
                       </div>
                       <div className="w-full max-h-full">
-                        <span className="font-bold">até 6x R$ 14,99 sem juros</span>
+                        <span className="font-bold">até 10x R$ 22,99 sem juros</span>
                       </div>
                     </div>
                     <button className="w-full p-3 bg-black mt-10 text-white font-bold rounded-sm">Comprar</button>

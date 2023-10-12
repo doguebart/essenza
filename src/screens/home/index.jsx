@@ -72,10 +72,10 @@ const Home = () => {
                   melhorar a saúde e a aparência da sua pele. Cuide da sua pele
                   com confiança, escolhendo a Essenza.
                 </p>
-                <div className="w-full max-h-full grid grid-cols-1 lg:grid-cols-2 gap-2">
+                <div className="w-full max-h-full grid grid-cols-1 lg:grid-cols-3 gap-2">
                   <div className="w-full max-h-full mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
                     <span className="text-md text-black font-bold">
-                      SÉRUM SPEACIAL FOR YOU
+                      ESSENZA SPECIAL FOR YOU
                     </span>
                     <p className="mt-4 text-sm text-black/70">
                       Nosso kit contém dois séruns, no qual o sérum diurno
@@ -84,9 +84,12 @@ const Home = () => {
                       específico da pele contra as inflamações, manchas e
                       cicatrizes da pele.
                     </p>
-                    <button className="bg-gold text-sm text-white w-1/3 p-2 mt-4 lg:mt-auto rounded-sm hover:opacity-90 duration-200">
-                      Confira
-                    </button>
+                    <div className="w-full max-h-full flex items-center justify-between mt-4 lg:mt-auto">
+                      <button className="bg-gold text-sm text-white w-1/3 p-2 rounded-sm hover:opacity-90 duration-200">
+                        Confira
+                      </button>
+                      <span className="text-md">R$169,99</span>
+                    </div>
                   </div>
                   <div className="w-full max-h-full mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
                     <span className="text-md text-black font-bold">
@@ -102,9 +105,32 @@ const Home = () => {
                       liberar uma quantidade ideal para que não haja um gasto
                       indesejado.
                     </p>
-                    <button className="bg-gold text-sm text-white w-1/3 p-2 mt-4 rounded-sm hover:opacity-90 duration-200">
-                      Confira
-                    </button>
+                    <div className="w-full max-h-full flex items-center justify-between mt-4 lg:mt-4">
+                      <button className="bg-gold text-sm text-white w-1/3 p-2 rounded-sm hover:opacity-90 duration-200">
+                        Confira
+                      </button>
+                      <span className="text-md">R$64,99</span>
+                    </div>
+                  </div>
+                  <div className="w-full max-h-full mt-10 flex flex-col bg-white border px-4 py-4 rounded-sm shadow-md">
+                    <span className="text-md text-black font-bold">
+                      ESSENZA ESSENTIAL FOR YOU
+                    </span>
+                    <p className="mt-4 text-sm text-black/70">
+                      Séruns + Protetor solar: Nosso kit contém os dois séruns,
+                      o sérum diurno ajudara na hidratação, nutrição e proteção
+                      de agentes poluidores, e o sérum noturno que ajudará no
+                      tratamento específico da pele contra as inflamações,
+                      manchas e cicatrizes da pele. E o protetor solar que irá
+                      auxiliar na proteção contra os raios UVA/UVB com o seu FPS
+                      60 e seu PPD 25.
+                    </p>
+                    <div className="w-full max-h-full flex items-center justify-between mt-4 lg:mt-auto">
+                      <button className="bg-gold text-sm text-white w-1/3 p-2 rounded-sm hover:opacity-90 duration-200">
+                        Confira
+                      </button>
+                      <span className="text-md">R$229,99</span>
+                    </div>
                   </div>
                 </div>
               </div>
